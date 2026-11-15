@@ -3,7 +3,7 @@ import streamlit as st
 #page setup
 st.set_page_config(page_title = "quiz", page_icon= "🐡")
 st.title("Lets see whether you're with me only for my biceps💔")
-st.write("You have to answer all the questions")
+st.write("You have to answer all the questions. it might help if you actually know our playlists by heart")
 
 questions = [
    {"question" :"OKayy Allora, let's start with easy \n What is the date of our first date",
@@ -17,14 +17,32 @@ questions = [
    "answer" : "Love Song"},
    {"question" : "ANd the very first meal we cooked together?",
    "options" : ["Carbonara","Kbbq Pork","those seafood rice and eggs"],
-   "answer" : "Kbbq Pork"}]
+   "answer" : "Kbbq Pork"},
+   {"question" : "How does how our first arguement went",
+   "options" : ["Don't Remember","When was it even?","very very healthy"],
+   "answer" : "very very healthy"},
+   {"question" : "You know that I love you",
+   "options" : ["Do I?","Into a world that i can't even see with one eye","But this ain't a love song"],
+   "answer" : "But this ain't a love song"},
+   {"question" : "Your eyes are like heaven",
+   "options" : ["You're In Love","Mine(Taylor's version","This song"],
+   "answer" : "This song"},
+   {"question" : "ayyy the song of the very first edit i hard launch you?",
+   "options" : ["Dreams","Everywhere","Love it if we made it"],
+   "answer" : "Everywhere"},
+   {"question" : "Who kisssed who first",
+   "options" : ["Me","You","idkk much much"],
+   "answer" : "You"},
+   {"question" : "Who's the love of your life?",
+   "options" : ["hehe my wife","my toe","my thumb"],
+   "answer" : "hehe my wife"},]
 
 user_answers = []
 
 for i, q in enumerate(questions):
-   st.subheader(q["questions"])
+   st.subheader(q["question"])
 
-   choices = st.radio("Pick one", q[options], key=f"q_{i}", index= None)
+   choice = st.radio("Pick one", q["options"], key=f"q_{i}", index= None)
    user_answers.append(choice)
    st.write("------")
 
