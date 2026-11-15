@@ -60,6 +60,6 @@ if st.button("Submit answers🎰"):
       st.balloons()
       st.success("Someone's obviously obessed. You gonna get reward for that full mark👅")
    elif score >= total//2:
-      st.info ("Awwn babyboo what did you get wrong")
+      st.info ("Awwn babyboo what did you get wrong but you will need to be punisnhed😤")
    else:
-      st.warning("bro i knew it you gor distracted with other sidedish")
+      st.warning("bro i knew it you gor distracted with  your sidedishes.⚰️")
